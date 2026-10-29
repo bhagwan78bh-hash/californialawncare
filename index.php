@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TexanLawnCare | The Definitive Texas Lawn Care & Grass Guide</title>
-  <meta name="description" content="Expert guide for thriving lawns across Texas. Master St. Augustine, Bermuda, Zoysia, and Buffalo grass through summer droughts, clay soil, and water restrictions.">
+  <title>CaliforniaLawnCare | The Definitive California Lawn Care & Turfgrass Guide</title>
+  <meta name="description" content="Expert guide for thriving lawns across California. Master Tall Fescue, UC Verde Buffalo grass, Hybrid Bermuda, and drought-smart turf under strict water rules and adobe clay.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,8 +15,10 @@
       --primary-dark: #14532d;
       --primary-light: #22c55e;
       --primary-soft: #f0fdf4;
-      --accent: #ca8a04;
-      --accent-dark: #a16207;
+      --accent: #d97706;
+      --accent-dark: #b45309;
+      --cal-gold: #f59e0b;
+      --cal-blue: #0284c7;
       --slate-900: #0f172a;
       --slate-800: #1e293b;
       --slate-700: #334155;
@@ -110,22 +112,22 @@
       text-transform: uppercase;
     }
 
-    .badge-texas {
+    .badge-california {
       background: #eff6ff;
-      color: #1d4ed8;
-      border: 1px solid #bfdbfe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+
+    .badge-gold {
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
     }
 
     .badge-green {
       background: #ecfdf5;
       color: #15803d;
       border: 1px solid #bbf7d0;
-    }
-
-    .badge-gold {
-      background: #fefce8;
-      color: #a16207;
-      border: 1px solid #fef08a;
     }
 
     /* Buttons */
@@ -223,7 +225,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--slate-200);
       transition: var(--transition);
@@ -253,7 +255,7 @@
     .logo-icon {
       width: 36px;
       height: 36px;
-      background: linear-gradient(135deg, #15803d, #14532d);
+      background: linear-gradient(135deg, #15803d, #0369a1);
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -289,7 +291,7 @@
     /* Hero Section */
     .hero {
       position: relative;
-      background: linear-gradient(165deg, #092c19 0%, #0e3f24 45%, #0f172a 100%);
+      background: linear-gradient(165deg, #06311e 0%, #0d4a2d 45%, #0f172a 100%);
       color: var(--white);
       padding: 80px 0 100px;
       overflow: hidden;
@@ -298,12 +300,12 @@
     .hero::before {
       content: "";
       position: absolute;
-      top: -100px;
+      top: -120px;
       right: -100px;
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0) 70%);
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(34, 197, 94, 0.08) 40%, rgba(34, 197, 94, 0) 70%);
       pointer-events: none;
     }
 
@@ -324,7 +326,7 @@
       line-height: 1.15;
     }
 
-    .hero-content h1 span.texas-highlight {
+    .hero-content h1 span.cal-highlight {
       color: #4ade80;
       display: inline-block;
       position: relative;
@@ -367,7 +369,7 @@
 
     /* Hero Interactive Card */
     .hero-card {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.06);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: var(--radius-xl);
@@ -394,11 +396,11 @@
 
     .status-pill {
       font-size: 0.75rem;
-      background: rgba(74, 222, 128, 0.2);
-      color: #4ade80;
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
       padding: 4px 10px;
       border-radius: 9999px;
-      border: 1px solid rgba(74, 222, 128, 0.4);
+      border: 1px solid rgba(245, 158, 11, 0.4);
     }
 
     .quick-zone-list {
@@ -465,7 +467,7 @@
       font-size: 1.05rem;
     }
 
-    /* Texas Grass Directory */
+    /* California Grass Directory */
     .grass-section {
       padding: 96px 0;
       background-color: var(--white);
@@ -753,7 +755,7 @@
     }
 
     .rule-box h4 {
-      color: #1e40af;
+      color: #0369a1;
       font-size: 1.05rem;
       display: flex;
       align-items: center;
@@ -762,7 +764,7 @@
     }
 
     .rule-box p {
-      color: #1e3a8a;
+      color: #0c4a6e;
       font-size: 0.9rem;
       line-height: 1.5;
     }
@@ -783,7 +785,7 @@
       width: 32px;
       height: 32px;
       background: #e0f2fe;
-      color: #0369a1;
+      color: #0284c7;
       border-radius: 8px;
       display: flex;
       align-items: center;
@@ -884,7 +886,7 @@
       color: #166534;
     }
 
-    /* Texas Soils & Pests Doctor */
+    /* California Soils & Pests Doctor */
     .doctor-section {
       padding: 96px 0;
       background-color: var(--slate-50);
@@ -914,8 +916,8 @@
       margin-bottom: 20px;
     }
 
-    .icon-chinch { background: #fee2e2; color: #dc2626; }
-    .icon-clay { background: #fef3c7; color: #d97706; }
+    .icon-grub { background: #fee2e2; color: #dc2626; }
+    .icon-adobe { background: #fef3c7; color: #d97706; }
     .icon-fungus { background: #e0e7ff; color: #4f46e5; }
 
     .doctor-card h3 {
@@ -1019,7 +1021,7 @@
 
     /* CTA Banner */
     .cta-banner {
-      background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+      background: linear-gradient(135deg, #15803d 0%, #065f46 100%);
       color: var(--white);
       padding: 72px 0;
       border-radius: var(--radius-xl);
@@ -1302,10 +1304,10 @@
     <div class="container top-bar-inner">
       <div class="top-bar-notice">
         <span class="pulse-dot"></span>
-        <span><strong>Texas Seasonal Advisory:</strong> Prepare lawn for upcoming spring pre-emergent application when 2-inch soil temperature reaches 55°F.</span>
+        <span><strong>California Water Advisory:</strong> Verify your local water district tier (LADWP, EBMUD, Valley Water, SD CWA). State law prohibits watering within 48 hours of measurable rain.</span>
       </div>
       <div>
-        <span>Updated for Texas Hardiness Zones 7a - 10a (USDA)</span>
+        <span>Updated for California Sunset Zones 1–24 & USDA Zones 8a–10b</span>
       </div>
     </div>
   </div>
@@ -1313,14 +1315,22 @@
   <!-- Header & Navigation -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="#" class="brand-logo" aria-label="TexanLawnCare Home">
+      <a href="#" class="brand-logo" aria-label="CaliforniaLawnCare Home">
         <div class="logo-icon">
-          <!-- Lone Star + Grass Icon -->
+          <!-- California Golden Bear + Sun Icon -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
           </svg>
         </div>
-        Texan<span>LawnCare</span>
+        California<span>LawnCare</span>
       </a>
 
       <nav>
@@ -1329,7 +1339,7 @@
           <li><a href="#calendar">Seasonal Schedule</a></li>
           <li><a href="#watering">Watering Guide</a></li>
           <li><a href="#calculator">Lawn Calculator</a></li>
-          <li><a href="#doctor">Texas Soil & Pests</a></li>
+          <li><a href="#doctor">Soils & Pests</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#newsletter" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Get Cheat Sheet</a></li>
         </ul>
@@ -1349,10 +1359,10 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <span class="badge badge-texas" style="margin-bottom: 16px;">The Lone Star Turfgrass Authority</span>
-        <h1>Master Your Texas Lawn, <span class="texas-highlight">Rain or Drought.</span></h1>
+        <span class="badge badge-california" style="margin-bottom: 16px;">The Golden State Turfgrass Authority</span>
+        <h1>Master Your California Lawn, <span class="cal-highlight">Water-Wise & Resilient.</span></h1>
         <p>
-          Texas lawns endure triple-digit summer heats, punishing winter freezes, alkaline blackland clay, and strict municipal water limits. TexanLawnCare gives you the science-backed playbook to keep your turf lush, green, and resilient.
+          California lawns navigate strict MWELO water ordinances, heavy adobe clay, coastal marine fog, and triple-digit Central Valley summers. CaliforniaLawnCare delivers the UC Davis research-backed playbook to keep your turf healthy, compliant, and emerald green.
         </p>
 
         <div class="hero-actions">
@@ -1370,16 +1380,16 @@
 
         <div class="hero-stats">
           <div class="stat-item">
-            <h4>4 Types</h4>
-            <p>Proven warm-season grasses for Texas micro-climates</p>
+            <h4>4 Turf Types</h4>
+            <p>Proven for California coastal, valley, and desert microclimates</p>
           </div>
           <div class="stat-item">
-            <h4>1 Inch/Wk</h4>
-            <p>Gold-standard watering rule for drought conservation</p>
+            <h4>CIMIS ET</h4>
+            <p>Evapotranspiration-based water conservation guidance</p>
           </div>
           <div class="stat-item">
             <h4>5 Regions</h4>
-            <p>Tailored schedules from Panhandle to Gulf Coast</p>
+            <p>Tailored schedules from San Diego to the Bay Area & NorCal</p>
           </div>
         </div>
       </div>
@@ -1392,7 +1402,7 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
-            Texas Regional Grass Focus
+            California Regional Grass Focus
           </div>
           <span class="status-pill">Active Guidance</span>
         </div>
@@ -1400,34 +1410,34 @@
         <div class="quick-zone-list">
           <div class="zone-row">
             <div>
-              <div class="zone-name">North Texas (DFW / Denton)</div>
-              <div class="zone-grass">Bermuda, Zoysia, St. Augustine (Raleigh)</div>
+              <div class="zone-name">Southern California (LA / Orange Co. / San Diego)</div>
+              <div class="zone-grass">Hybrid Bermuda, UC Verde, Dwarf Tall Fescue</div>
             </div>
-            <span class="zone-action-tag">Clay Soil Care</span>
+            <span class="zone-action-tag">Water Tiers</span>
           </div>
 
           <div class="zone-row">
             <div>
-              <div class="zone-name">Central Texas (Austin / San Antonio)</div>
-              <div class="zone-grass">Zoysia, Buffalo Grass, St. Augustine</div>
+              <div class="zone-name">Bay Area & Central Coast (SF / San Jose / Monterey)</div>
+              <div class="zone-grass">RTF Tall Fescue, Perennial Rye, Fine Fescue</div>
             </div>
-            <span class="zone-action-tag">Water Restrictions</span>
+            <span class="zone-action-tag">Marine Fog & Rust</span>
           </div>
 
           <div class="zone-row">
             <div>
-              <div class="zone-name">Gulf Coast (Houston / Galveston)</div>
-              <div class="zone-grass">St. Augustine (Floratam), Bermuda</div>
+              <div class="zone-name">Central Valley (Sacramento / Fresno / Bakersfield)</div>
+              <div class="zone-grass">Hybrid Bermuda, Tall Fescue, Zoysia</div>
             </div>
-            <span class="zone-action-tag">Fungus Watch</span>
+            <span class="zone-action-tag">100°F+ Heat</span>
           </div>
 
           <div class="zone-row">
             <div>
-              <div class="zone-name">West Texas & Panhandle (Lubbock / Amarillo)</div>
-              <div class="zone-grass">Buffalo Grass, Blue Grama, Bermuda</div>
+              <div class="zone-name">Northern California (Santa Rosa / Chico / Redding)</div>
+              <div class="zone-grass">Tall Fescue, Kentucky Bluegrass blend, Rye</div>
             </div>
-            <span class="zone-action-tag">Freeze & Drought</span>
+            <span class="zone-action-tag">Winter Drainage</span>
           </div>
         </div>
       </div>
@@ -1439,74 +1449,118 @@
     <div class="container">
       <div class="section-header">
         <span class="badge badge-green">Turfgrass Comparison</span>
-        <h2>The 4 Best Grasses for Texas Lawns</h2>
-        <p>Choosing the correct warm-season grass is 80% of lawn success in Texas. Match your sunlight, soil depth, and irrigation capabilities.</p>
+        <h2>The 4 Best Grasses for California Lawns</h2>
+        <p>California sits on the transition zone between cool-season and warm-season grasses. Select the right turf for your microclimate and local water restrictions.</p>
       </div>
 
       <!-- Filter buttons -->
       <div class="grass-filter-bar">
         <button class="filter-btn active" data-filter="all">All Grasses</button>
-        <button class="filter-btn" data-filter="shade">Best for Shade</button>
+        <button class="filter-btn" data-filter="year-round">Green Year-Round</button>
         <button class="filter-btn" data-filter="drought">Extreme Drought Hardiness</button>
         <button class="filter-btn" data-filter="traffic">High Foot Traffic</button>
       </div>
 
       <div class="grass-cards-grid" id="grassGrid">
-        <!-- St. Augustine -->
-        <div class="grass-card" data-category="shade">
+        <!-- Dwarf Tall Fescue / RTF -->
+        <div class="grass-card" data-category="year-round traffic">
           <div class="grass-card-header">
             <div class="grass-card-title">
-              <h3>St. Augustine</h3>
-              <div class="botanical">Stenotaphrum secundatum</div>
+              <h3>Dwarf Tall Fescue (RTF)</h3>
+              <div class="botanical">Schedonorus arundinaceus</div>
             </div>
-            <span class="grass-popular-tag">Most Common</span>
+            <span class="grass-popular-tag">#1 In California</span>
           </div>
           <p class="grass-desc">
-            The traditional Texas favorite. Famous for broad, vibrant green blades that form a dense, plush carpet. Top choice for yards with mature shade trees.
+            The standard residential lawn throughout Northern California, the Bay Area, and coastal Southern California. Produces root depths up to 3–6 feet into clay, keeping it deep green 365 days a year without winter browning.
           </p>
           <div class="grass-specs">
             <div class="spec-item">
               <span class="spec-label">Sun Required</span>
-              <span class="spec-value">4 - 6+ Hours</span>
+              <span class="spec-value">5 - 8+ Hours</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Mow Height</span>
               <span class="spec-value">2.5" - 3.5"</span>
             </div>
             <div class="spec-item">
-              <span class="spec-label">Drought Tolerance</span>
-              <span class="spec-value">Moderate</span>
+              <span class="spec-label">Winter Color</span>
+              <span class="spec-value">Stays 100% Green</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Recommended Cultivar</span>
-              <span class="spec-value">Palmetto, Raleigh</span>
+              <span class="spec-value">RTF, Medallion, Bonsai</span>
             </div>
           </div>
           <div class="grass-pros-cons">
             <ul class="pros-list">
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Excellent shade tolerance compared to Bermuda
+                Never goes brown or dormant in mild California winters
               </li>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Quick establishment from sod
+                Deep root system resists short heat waves better than bluegrass
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Bermuda -->
+        <!-- UC Verde Buffalo Grass -->
+        <div class="grass-card" data-category="drought">
+          <div class="grass-card-header">
+            <div class="grass-card-title">
+              <h3>UC Verde® Buffalo Grass</h3>
+              <div class="botanical">Bouteloua dactyloides 'UC Verde'</div>
+            </div>
+            <span class="grass-popular-tag">UC Davis Bred</span>
+          </div>
+          <p class="grass-desc">
+            Engineered jointly by UC Davis and UC Riverside specifically for California's Mediterranean climate and drought mandates. Uses 70% to 75% less water than traditional fescue, handles 115°F valley heat, and requires minimal mowing.
+          </p>
+          <div class="grass-specs">
+            <div class="spec-item">
+              <span class="spec-label">Sun Required</span>
+              <span class="spec-value">6+ Hours (Full Sun)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Mow Height</span>
+              <span class="spec-value">2.0" - 3.0" (or Unmowed)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Water Savings</span>
+              <span class="spec-value">Up to 75% Less Water</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Recommended Cultivar</span>
+              <span class="spec-value">UC Verde (Patented Plugs)</span>
+            </div>
+          </div>
+          <div class="grass-pros-cons">
+            <ul class="pros-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Approved for California turf replacement rebate requirements
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Virtually pollen-free (great for allergy sufferers)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hybrid Bermuda -->
         <div class="grass-card" data-category="drought traffic">
           <div class="grass-card-header">
             <div class="grass-card-title">
-              <h3>Bermuda Grass</h3>
-              <div class="botanical">Cynodon dactylon</div>
+              <h3>Hybrid Bermuda Grass</h3>
+              <div class="botanical">Cynodon dactylon × transvaalensis</div>
             </div>
-            <span class="grass-popular-tag">Sun King</span>
+            <span class="grass-popular-tag">SoCal Favorite</span>
           </div>
           <p class="grass-desc">
-            Tough as Texas boot leather. Thrives in scorching 100°F+ full Texas sun, repairs itself rapidly via aggressive rhizomes, and handles kids and dogs with ease.
+            The top choice for Inland Empire, Central Valley, and Southern California athletic fields and active yards. Unmatched recovery speed from pets and sports, and superior heat endurance in dry 105°F weather.
           </p>
           <div class="grass-specs">
             <div class="spec-item">
@@ -1515,7 +1569,7 @@
             </div>
             <div class="spec-item">
               <span class="spec-label">Mow Height</span>
-              <span class="spec-value">1.0" - 2.0"</span>
+              <span class="spec-value">0.75" - 1.5"</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Drought Tolerance</span>
@@ -1523,106 +1577,62 @@
             </div>
             <div class="spec-item">
               <span class="spec-label">Recommended Cultivar</span>
-              <span class="spec-value">Tifway 419, Celebration</span>
+              <span class="spec-value">Tifway 419, Santa Ana</span>
             </div>
           </div>
           <div class="grass-pros-cons">
             <ul class="pros-list">
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Unmatched recuperative power & foot traffic resistance
+                Fastest recuperative power from heavy foot traffic and dogs
               </li>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Goes dormant in extreme drought, rebounds rapidly with rain
+                Thrives in saline and reclaimed municipal irrigation water
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Zoysia -->
-        <div class="grass-card" data-category="shade drought traffic">
+        <!-- Kikuyu & Coastal Warm Grasses -->
+        <div class="grass-card" data-category="drought traffic">
           <div class="grass-card-header">
             <div class="grass-card-title">
-              <h3>Zoysia Grass</h3>
-              <div class="botanical">Zoysia japonica / matrella</div>
+              <h3>Kikuyu & Seashore Paspalum</h3>
+              <div class="botanical">Cenchrus clandestinus / Paspalum</div>
             </div>
-            <span class="grass-popular-tag">Luxury Choice</span>
+            <span class="grass-popular-tag">Coastal Tough</span>
           </div>
           <p class="grass-desc">
-            The premium Texas turfgrass. Combines the barefoot softness of fine turf with the heat resilience of Bermuda and the moderate shade tolerance of St. Augustine.
+            Famous along coastal Southern California from Santa Barbara to San Diego. Extremely aggressive, low-water turf that naturally outcompetes weeds and thrives on salty sea breezes and heavy reclaimed water.
           </p>
           <div class="grass-specs">
             <div class="spec-item">
               <span class="spec-label">Sun Required</span>
-              <span class="spec-value">4 - 5+ Hours</span>
+              <span class="spec-value">6+ Hours</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Mow Height</span>
               <span class="spec-value">1.5" - 2.5"</span>
             </div>
             <div class="spec-item">
-              <span class="spec-label">Drought Tolerance</span>
-              <span class="spec-value">Very High</span>
+              <span class="spec-label">Salt Tolerance</span>
+              <span class="spec-value">Exceptional</span>
             </div>
             <div class="spec-item">
               <span class="spec-label">Recommended Cultivar</span>
-              <span class="spec-value">Palisades, Zeon</span>
+              <span class="spec-value">Whittet, Platinum TE</span>
             </div>
           </div>
           <div class="grass-pros-cons">
             <ul class="pros-list">
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Dense growth naturally crowds out common Texas weeds
+                Dense woven sod chokes out stubborn California broadleaf weeds
               </li>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Superior cold hardiness during sudden Texas winter freezes
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Buffalo Grass -->
-        <div class="grass-card" data-category="drought">
-          <div class="grass-card-header">
-            <div class="grass-card-title">
-              <h3>Buffalo Grass</h3>
-              <div class="botanical">Bouteloua dactyloides</div>
-            </div>
-            <span class="grass-popular-tag">Texas Native</span>
-          </div>
-          <p class="grass-desc">
-            The original native Texas prairie grass. Requires up to 75% less water and almost zero synthetic fertilizer. Ideal for acreage, eco-conscious lawns, and Hill Country landscapes.
-          </p>
-          <div class="grass-specs">
-            <div class="spec-item">
-              <span class="spec-label">Sun Required</span>
-              <span class="spec-value">6 - 8+ Hours</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Mow Height</span>
-              <span class="spec-value">3.0" - 4.0" (or Unmowed)</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Drought Tolerance</span>
-              <span class="spec-value">Maximum (Native)</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Recommended Cultivar</span>
-              <span class="spec-value">609, Prairie, Sundancer</span>
-            </div>
-          </div>
-          <div class="grass-pros-cons">
-            <ul class="pros-list">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Survives on natural Texas rainfall once established
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Naturally immune to chinch bug infestations
+                Handles reclaimed non-potable city water without browning
               </li>
             </ul>
           </div>
@@ -1631,13 +1641,13 @@
     </div>
   </section>
 
-  <!-- 4-Season Texas Lawn Calendar -->
+  <!-- 4-Season California Lawn Calendar -->
   <section id="calendar" class="calendar-section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-texas">Texas A&M AgriLife Aligned</span>
-        <h2>4-Season Texas Lawn Care Calendar</h2>
-        <p>Timing in Texas is determined by soil temperatures, not just the Gregorian calendar. Here is your seasonal action plan.</p>
+        <span class="badge badge-california">UC ANR & CIMIS Aligned</span>
+        <h2>4-Season California Lawn Care Calendar</h2>
+        <p>California lawn timing is driven by Mediterranean wet/dry cycles and evapotranspiration (ET) rates. Here is your seasonal action plan.</p>
       </div>
 
       <!-- Season Tabs -->
@@ -1662,35 +1672,35 @@
 
       <!-- Dynamic Seasonal Content Container -->
       <div class="season-content-card" id="seasonDisplay">
-        <!-- Content will be injected by JavaScript -->
+        <!-- Injected via JavaScript -->
       </div>
     </div>
   </section>
 
-  <!-- Texas Watering Mastery & Calculator -->
+  <!-- California Watering Mastery & Calculator -->
   <section id="watering" class="watering-section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-texas">Water Conservation</span>
-        <h2>Texas Watering Science: Cycle & Soak</h2>
-        <p>Texas black clay soil cannot absorb water as fast as typical spray heads put it out. Master the cycle-and-soak technique to stop wasteful runoff.</p>
+        <span class="badge badge-california">MWELO Water Compliance</span>
+        <h2>California Watering Science: Cycle & Soak</h2>
+        <p>California adobe clay soils absorb water slower than most sprinkler nozzles apply it. Master the cycle-and-soak method to prevent sidewalk runoff and meet local water budgets.</p>
       </div>
 
       <div class="watering-grid">
         <!-- Watering Principles -->
         <div class="watering-info-card">
-          <h3>The "1-Inch Per Week" Rule</h3>
+          <h3>The CIMIS Evapotranspiration (ET) Rule</h3>
           <p style="color: var(--slate-600); margin-top: 8px;">
-            In Texas, deep and infrequent watering trains root systems to grow 6 to 8 inches deep into clay soil, keeping lawns green even during Stage 1 or Stage 2 water restrictions.
+            Under California's Model Water Efficient Landscape Ordinance (MWELO), irrigation is keyed to regional reference evapotranspiration (ETo). In California, watering deeply and infrequently trains roots to reach 3+ feet deep into heavy clay subsoils.
           </p>
 
           <div class="rule-box">
             <h4>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-              The "Cycle-and-Soak" Method Explained
+              The Adobe Clay "Cycle-and-Soak" Method
             </h4>
             <p>
-              Instead of running a sprinkler station for 20 continuous minutes (which causes water to run off hard clay after minute 6), split the run time into <strong>three 6-minute cycles spaced 45 minutes apart</strong>. The soil absorbs each cycle like a sponge!
+              Spraying fixed pop-up nozzles for 15 straight minutes on California clay causes runoff by minute 4. Instead, split your runtime into <strong>three 4-to-5 minute cycles spaced 45 minutes apart</strong>. This allows the clay to absorb every drop before the next cycle runs!
             </p>
           </div>
 
@@ -1700,8 +1710,8 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div class="tip-text">
-                <h5>Water Between 4:00 AM and 8:00 AM</h5>
-                <p>Avoids up to 40% evaporative loss from Texas wind and blazing midday heat, while preventing fungal leaf wetness that occurs from evening watering.</p>
+                <h5>Irrigate Before 9:00 AM or After 6:00 PM</h5>
+                <p>California municipal codes universally mandate watering during cool morning or evening hours to eliminate evaporative loss from inland winds and hot dry sun.</p>
               </div>
             </li>
 
@@ -1710,8 +1720,8 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
               </div>
               <div class="tip-text">
-                <h5>The Tuna Can Catch-Cup Audit</h5>
-                <p>Place 5 empty tuna cans around your lawn. Run your sprinklers for 15 minutes. Measure the average depth with a ruler to find your exact sprinkler precipitation rate.</p>
+                <h5>Claim California Turf & Smart Controller Rebates</h5>
+                <p>Metropolitan Water District (BeWaterWise), LADWP, EBMUD, and regional boards offer generous rebates ($2–$4/sq ft) for weather-based irrigation controllers and high-efficiency rotary nozzles.</p>
               </div>
             </li>
           </ul>
@@ -1721,43 +1731,43 @@
         <div class="calculator-card" id="calculator">
           <div class="calc-title">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
-            <h3>Texas Sprinkler Runtime Calculator</h3>
+            <h3>California Sprinkler Runtime Calculator</h3>
           </div>
-          <p class="calc-subtitle">Calculate optimal sprinkler zone minutes and cycle-and-soak splits based on your Texas setup.</p>
+          <p class="calc-subtitle">Calculate optimal zone minutes and cycle-and-soak splits calibrated for California adobe clay and water restriction tiers.</p>
 
           <form id="waterCalcForm">
             <div class="form-group">
-              <label for="grassTypeSelect">Your Grass Type</label>
+              <label for="grassTypeSelect">Your Grass Variety</label>
               <select id="grassTypeSelect" class="form-control">
-                <option value="st-augustine">St. Augustine (Higher water demand)</option>
-                <option value="bermuda">Bermuda (Moderate water demand)</option>
-                <option value="zoysia">Zoysia (Moderate-low water demand)</option>
-                <option value="buffalo">Buffalo Grass (Very low water demand)</option>
+                <option value="tall-fescue">Tall Fescue / RTF (Moderate cool-season demand)</option>
+                <option value="bermuda">Hybrid Bermuda (Low-moderate warm-season demand)</option>
+                <option value="uc-verde">UC Verde® Buffalo Grass (Extreme low water: -75%)</option>
+                <option value="kikuyu">Kikuyu / Paspalum (Coastal low water demand)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="nozzleSelect">Sprinkler Head Type</label>
+              <label for="nozzleSelect">Sprinkler Head Hardware</label>
               <select id="nozzleSelect" class="form-control">
-                <option value="spray">Fixed Pop-Up Spray Heads (Fast output: ~1.5"/hr)</option>
-                <option value="rotor">Rotary / Rotor Heads (Slow output: ~0.6"/hr)</option>
-                <option value="mp-rotator">High-Efficiency Multi-Stream Rotators (~0.4"/hr)</option>
+                <option value="spray">Fixed Pop-Up Spray Heads (~1.5"/hr output)</option>
+                <option value="rotor">Rotary / Rotor Nozzles (~0.65"/hr output)</option>
+                <option value="mp-rotator">Multi-Stream Efficiency Rotators (~0.45"/hr output)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="seasonSelect">Current Texas Season</label>
+              <label for="seasonSelect">Current California Season</label>
               <select id="seasonSelect" class="form-control">
-                <option value="summer">Peak Summer (1.00" - 1.25" / week target)</option>
-                <option value="spring">Spring / Fall (0.50" - 0.75" / week target)</option>
-                <option value="winter">Winter Dormancy (0.25" / 2-3 weeks target)</option>
+                <option value="summer">Peak Summer / Dry Season (1.00" - 1.25" / week target)</option>
+                <option value="spring">Spring / Fall Growth Window (0.60" - 0.75" / week target)</option>
+                <option value="winter">Winter Rainy Season (0.15" - 0.25" or natural rain)</option>
               </select>
             </div>
 
             <div class="calc-result-box">
-              <div class="calc-result-label">Recommended Run Time per Watering Day</div>
-              <div class="calc-result-number" id="calcMinutes">18 Mins</div>
-              <div class="calc-breakdown" id="calcCycles">Run 3 cycles of 6 minutes, spaced 45 minutes apart.</div>
+              <div class="calc-result-label">Recommended Runtime per Irrigation Day</div>
+              <div class="calc-result-number" id="calcMinutes">16 Mins</div>
+              <div class="calc-breakdown" id="calcCycles">Split into 3 cycles of 5-6 minutes, spaced 45 minutes apart.</div>
             </div>
           </form>
         </div>
@@ -1765,58 +1775,58 @@
     </div>
   </section>
 
-  <!-- Texas Soil & Pest Doctor -->
+  <!-- California Soils & Pest Doctor -->
   <section id="doctor" class="doctor-section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-gold">Texas Lawn Doctor</span>
-        <h2>Diagnosing Texas Soil & Common Pests</h2>
-        <p>Before you spend hundreds on fertilizer, diagnose whether your lawn is struggling with compacted blackland clay, root-eating grubs, or summer chinch bugs.</p>
+        <span class="badge badge-gold">California Turf Doctor</span>
+        <h2>Diagnosing California Soils & Common Pests</h2>
+        <p>Before applying chemical treatments, identify whether your turf is struggling with heavy adobe clay compaction, masked chafer beetle grubs, or coastal marine layer fungal blight.</p>
       </div>
 
       <div class="doctor-grid">
-        <!-- Chinch Bugs -->
+        <!-- Masked Chafer Grubs -->
         <div class="doctor-card">
-          <div class="doctor-card-icon icon-chinch">
+          <div class="doctor-card-icon icon-grub">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
           </div>
-          <h3>Chinch Bug Infestation</h3>
+          <h3>Masked Chafer Grubs & Billbugs</h3>
           <p>
-            <strong>Symptoms:</strong> Patches of turf look dry and straw-like during July/August, typically starting along hot concrete sidewalks and driveways. Does not respond to watering.
+            <strong>Symptoms:</strong> Turf wilts in irregular brown patches in late July to September. Grass pulls up easily like a carpet because C-shaped white grubs have chewed through root systems beneath the soil line.
           </p>
           <div class="rx-box">
-            <div class="rx-title">Texas Rx Solution</div>
-            <div class="rx-text">Test with floatation tin can method; treat early with Bifenthrin or neem oil for organic control. Keep turf hydrated along curbs.</div>
+            <div class="rx-title">California Rx Solution</div>
+            <div class="rx-text">Apply beneficial nematodes (Heterorhabditis bacteriophora) for organic control in August, or preventive GrubEx in early summer. Water thoroughly after treatment.</div>
           </div>
         </div>
 
-        <!-- Texas Blackland Clay -->
+        <!-- California Adobe Clay -->
         <div class="doctor-card">
-          <div class="doctor-card-icon icon-clay">
+          <div class="doctor-card-icon icon-adobe">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 22 1-1h18l1 1"/><path d="M13 6v12"/><path d="M9 10v8"/><path d="M17 14v4"/><path d="M5 14v4"/></svg>
           </div>
-          <h3>Compacted Blackland Clay</h3>
+          <h3>Compacted Adobe Clay & Salt Buildup</h3>
           <p>
-            <strong>Symptoms:</strong> Water pools on top or runs off quickly into the street. Soil cracks during drought and feels rock-hard. Root depth is shallow (&lt; 2 inches).
+            <strong>Symptoms:</strong> Water sheets off slopes into storm drains; soil cracks into hard blocks during dry summer spells. Turf shows tip burn from salinity in Colorado River or well water.
           </p>
           <div class="rx-box">
-            <div class="rx-title">Texas Rx Solution</div>
-            <div class="rx-text">Perform core aeration in late spring, then topdress with 1/4" screened compost. Apply humic acid and liquid aerators annually.</div>
+            <div class="rx-title">California Rx Solution</div>
+            <div class="rx-text">Perform core aeration every autumn, topdress with 1/4" organic compost or gypsum to displace sodium salts, and utilize cycle-and-soak watering.</div>
           </div>
         </div>
 
-        <!-- Large Patch / TARR Fungus -->
+        <!-- Coastal Fog Rust & Dollar Spot -->
         <div class="doctor-card">
           <div class="doctor-card-icon icon-fungus">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 1 8 0"/><path d="M12 8v8"/></svg>
           </div>
-          <h3>Take-All Root Rot & Large Patch</h3>
+          <h3>Coastal Rust & Dollar Spot Fungus</h3>
           <p>
-            <strong>Symptoms:</strong> Circular yellowing rings in autumn or early spring when soil is damp and nights cool below 70°F. Grass stolons pull up effortlessly with rotted roots.
+            <strong>Symptoms:</strong> Orange/yellow powder coats mower wheels and shoes in coastal fog zones (Bay Area, Orange Co., San Diego). Silver dollar-sized tan spots develop on fescue blades during damp mornings.
           </p>
           <div class="rx-box">
-            <div class="rx-title">Texas Rx Solution</div>
-            <div class="rx-text">Stop night irrigation; topdress with peat moss to lower surface pH, apply Azoxystrobin fungicide preventatively in late September.</div>
+            <div class="rx-title">California Rx Solution</div>
+            <div class="rx-text">Rust indicates nitrogen deficiency in cool foggy weather; apply a mild slow-release nitrogen fertilizer. Never irrigate in late afternoon or night.</div>
           </div>
         </div>
       </div>
@@ -1827,65 +1837,59 @@
   <section id="faq" class="faq-section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-texas">Got Questions?</span>
-        <h2>Texas Lawn Care FAQs</h2>
-        <p>Direct, actionable answers to the most common questions from Texas homeowners.</p>
+        <span class="badge badge-california">Homeowner Guidance</span>
+        <h2>California Lawn Care FAQs</h2>
+        <p>Direct, actionable answers for maintaining compliant, healthy lawns under California water regulations and diverse microclimates.</p>
       </div>
 
       <div class="faq-accordion">
         <div class="faq-item">
           <button class="faq-question">
-            <span>When should I apply pre-emergent herbicide in Texas?</span>
+            <span>How do I keep my lawn green during California Stage 2 drought limits?</span>
             <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>
-              In Texas, pre-emergent should be applied twice a year based on soil temperature rather than fixed calendar dates:
-              <br><br>
-              <strong>1. Spring Application (Crabgrass, Sandburs):</strong> Apply when the 2-inch soil temperature reaches 55°F for 3 consecutive days (usually mid-February in South Texas, early March in DFW & Central Texas).
-              <br><br>
-              <strong>2. Fall Application (Poa Annua / Annual Bluegrass, Henbit):</strong> Apply when soil temperatures cool down to 70°F (typically late September to mid-October).
+              When your local water utility restricts you to 1 or 2 watering days per week:
+              <br>• <strong>Raise your mower deck to 3.5 inches on Tall Fescue:</strong> Taller grass blades shade soil roots, cutting surface evaporation by up to 30%.
+              <br>• <strong>Apply a soil surfactant / wetting agent:</strong> California clay develops hydrophobicity during dry spells; wetting agents help water penetrate directly to the root zone.
+              <br>• <strong>Avoid high-nitrogen fertilizer in peak heat:</strong> Pushing fast top growth forces excessive water consumption and increases heat stress.
             </p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <span>How do I protect my lawn during a Texas summer drought restriction?</span>
+            <span>When is the best time to overseed or seed a lawn in California?</span>
             <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>
-              When your municipality enforces 1-day-per-week watering:
-              <br>• <strong>Raise your mower blade by 0.5 to 1 inch:</strong> Taller grass shades the soil surface, cooling root systems and reducing soil moisture evaporation by up to 30%.
-              <br>• <strong>Skip high-nitrogen synthetic fertilizers:</strong> Fast top-growth demands more water and burns grass under extreme 100°F heat.
-              <br>• <strong>Embrace dormancy:</strong> Warm-season Bermuda and Zoysia can survive weeks of drought dormancy without dying; they will green up when rains return.
+              In California, <strong>September through October</strong> is the undisputed golden window for seeding and overseeding cool-season lawns (Tall Fescue, Perennial Rye). Soil temperatures are warm from summer, but ambient daytime air temperatures are moderating, and upcoming winter rains support root establishment without heat stress.
             </p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <span>Can I overseed my Texas lawn with Ryegrass for winter green?</span>
+            <span>What is the 48-hour California rain shutoff rule?</span>
             <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>
-              You can overseed <strong>Bermuda</strong> lawns with perennial or annual ryegrass in October for a bright emerald winter lawn. However, we <strong>strongly advise against</strong> overseeding St. Augustine or Zoysia, as rye vigorously competes for water, nitrogen, and sunlight in spring when your permanent warm-season grass is trying to wake up from dormancy.
+              Under California State Water Resources Control Board regulations, it is illegal across the entire state to run outdoor irrigation during and within <strong>48 hours after measurable rainfall</strong> (at least 0.25 inches). Installing a certified smart weather-based irrigation controller or rain sensor automates this requirement and protects you from municipal code enforcement citations.
             </p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <span>What should I do if my lawn suffers a hard winter freeze like Uri?</span>
+            <span>How do California turf replacement rebates work if I want to switch to UC Verde?</span>
             <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
             <p>
-              If a severe Arctic blast is forecast:
-              <br>1. <strong>Water your lawn 24-48 hours before the freeze:</strong> Moist soil retains heat significantly better than dry soil, insulating the root zone and crowns.
-              <br>2. <strong>Wait until mid-spring to assess damage:</strong> Do not scalp or rip out turf prematurely. St. Augustine and Zoysia root systems often survive and emerge in late April once soil warms above 65°F.
+              Programs like BeWaterWise (Metropolitan Water District) and regional water utilities offer $2.00 to $4.00+ per square foot to convert thirsty lawns into drought-tolerant landscaping. While traditional lawns do not qualify, many agencies permit ultra-low-water native turf like <strong>UC Verde® Buffalo Grass</strong> or native Kurapia groundcover when paired with high-efficiency drip or rotary nozzles. Always apply for pre-approval before removing any existing grass!
             </p>
           </div>
         </div>
@@ -1896,14 +1900,14 @@
   <!-- Newsletter / Free Guide Download CTA -->
   <section id="newsletter" class="container">
     <div class="cta-banner">
-      <h2>Get the Texas Lawn Care Cheat Sheet</h2>
-      <p>A printable 1-page seasonal schedule with soil temperature benchmarks, mowing heights, and fertilizer N-P-K ratios for Texas turfgrass.</p>
+      <h2>Get the California Lawn Care Cheat Sheet</h2>
+      <p>A printable 1-page seasonal schedule with CIMIS evapotranspiration benchmarks, mowing heights, and UC Davis-aligned fertilizer schedules for Golden State lawns.</p>
       <form class="cta-form" id="leadForm">
         <input type="email" class="cta-input" placeholder="Enter your email address..." required aria-label="Your email">
         <button type="submit" class="btn btn-secondary">Download Free PDF</button>
       </form>
       <div id="formSuccess" style="display: none; margin-top: 16px; color: #bbf7d0; font-weight: 600;">
-        Thank you! Your Texas Lawn Care Guide is on its way to your inbox.
+        Thank you! Your California Lawn Care Guide is on its way to your inbox.
       </div>
     </div>
   </section>
@@ -1915,25 +1919,31 @@
         <div class="footer-brand">
           <h3>
             <div class="logo-icon" style="width: 28px; height: 28px;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+              </svg>
             </div>
-            Texan<span>LawnCare</span>
+            California<span>LawnCare</span>
           </h3>
           <p>
-            Dedicated to helping homeowners cultivate hardy, water-efficient, and beautiful lawns tailored to Texas climates, soils, and municipal regulations.
+            Dedicated to helping homeowners cultivate hardy, water-efficient, and beautiful lawns tailored to California microclimates, adobe soils, and municipal water conservation regulations.
           </p>
           <p class="footer-serving">
-            Proudly serving Austin, Dallas-Fort Worth, Houston, San Antonio, Lubbock, and surrounding Texas communities.
+            Proudly serving Los Angeles, Orange County, San Diego, San Jose, San Francisco Bay Area, Sacramento, Central Valley, and communities statewide.
           </p>
         </div>
 
         <div class="footer-col">
           <h4>Grass Types</h4>
           <ul>
-            <li><a href="#grass-guide">St. Augustine</a></li>
-            <li><a href="#grass-guide">Bermuda Grass</a></li>
-            <li><a href="#grass-guide">Zoysia Grass</a></li>
-            <li><a href="#grass-guide">Buffalo Grass</a></li>
+            <li><a href="#grass-guide">Dwarf Tall Fescue (RTF)</a></li>
+            <li><a href="#grass-guide">UC Verde® Buffalo Grass</a></li>
+            <li><a href="#grass-guide">Hybrid Bermuda</a></li>
+            <li><a href="#grass-guide">Kikuyu & Paspalum</a></li>
           </ul>
         </div>
 
@@ -1943,14 +1953,14 @@
             <li><a href="#calendar">Seasonal Calendar</a></li>
             <li><a href="#watering">Cycle & Soak Guide</a></li>
             <li><a href="#calculator">Watering Calculator</a></li>
-            <li><a href="#doctor">Pest Diagnostic</a></li>
+            <li><a href="#doctor">Adobe Clay & Pests</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Legal & Info</h4>
           <ul>
-            <li><button class="footer-legal-btn" id="openPrivacyBtn">Privacy Policy</button></li>
+            <li><button class="footer-legal-btn" id="openPrivacyBtn">Privacy Policy (CCPA)</button></li>
             <li><button class="footer-legal-btn" id="openTermsBtn">Terms of Service</button></li>
             <li><a href="#faq">Frequently Asked</a></li>
           </ul>
@@ -1959,10 +1969,10 @@
 
       <div class="footer-bottom">
         <div>
-          © 2026 TexanLawnCare. All rights reserved. Built for Texas homeowners and turfgrass stewards.
+          © 2026 CaliforniaLawnCare. All rights reserved. Built for California homeowners and water-wise turfgrass stewards.
         </div>
         <div class="footer-legal-links">
-          <button class="footer-legal-btn" id="openPrivacyBottomBtn">Privacy Policy</button>
+          <button class="footer-legal-btn" id="openPrivacyBottomBtn">Privacy Policy (CCPA/CPRA)</button>
           <span>•</span>
           <button class="footer-legal-btn" id="openTermsBottomBtn">Terms of Service</button>
         </div>
@@ -1970,51 +1980,55 @@
     </div>
   </footer>
 
-  <!-- Native HTML5 Dialog: Privacy Policy Modal -->
+  <!-- Native HTML5 Dialog: Privacy Policy Modal (CCPA/CPRA Compliant) -->
   <dialog id="privacyDialog" aria-labelledby="privacyTitle">
     <div class="modal-container">
       <div class="modal-header">
-        <h3 id="privacyTitle">Privacy Policy — TexanLawnCare</h3>
+        <h3 id="privacyTitle">Privacy Policy — CaliforniaLawnCare</h3>
         <button class="modal-close-btn" id="closePrivacyBtn" aria-label="Close Privacy Policy">&times;</button>
       </div>
       <div class="modal-body">
         <p><strong>Effective Date:</strong> January 1, 2026 | <strong>Last Updated:</strong> October 2026</p>
         
-        <h4>1. Introduction & Texas Regional Scope</h4>
+        <h4>1. Introduction & California Consumer Privacy Scope</h4>
         <p>
-          Welcome to TexanLawnCare ("we", "our", or "us"). We value your privacy and are committed to safeguarding personal information collected through our website, digital lawn calculators, newsletter forms, and educational resources. This Privacy Policy is structured in compliance with applicable United States privacy standards, including the <strong>Texas Data Privacy and Security Act (TDPSA)</strong>.
+          Welcome to CaliforniaLawnCare ("we", "our", or "us"). We respect your privacy and are committed to safeguarding personal information collected through our website, digital watering calculators, and seasonal lawn newsletters. This Privacy Policy is structured specifically in compliance with the <strong>California Consumer Privacy Act (CCPA)</strong> as amended by the <strong>California Privacy Rights Act (CPRA)</strong>.
         </p>
 
-        <h4>2. Information We Collect</h4>
-        <p>We collect information in the following ways:</p>
+        <h4>2. Categories of Personal Information We Collect</h4>
+        <p>In the preceding 12 months, we may have collected the following categories of information:</p>
         <ul>
-          <li><strong>Directly Provided Information:</strong> When you subscribe to our seasonal lawn care guides, submit a question, or request a customized watering plan, you may provide your name, email address, postal zip code (to identify your Texas climate zone), and grass type preference.</li>
-          <li><strong>Automated Usage Data:</strong> We may collect non-identifiable usage statistics including browser type, referring pages, device operating system, general geographic location (Texas metropolitan areas), and time spent reviewing seasonal guides.</li>
-          <li><strong>Interactive Tools Input:</strong> Inputs into our Texas Sprinkler Runtime Calculator (e.g., grass variety, nozzle type) are processed client-side within your browser and are not sold or linked to personal profiles.</li>
+          <li><strong>Identifiers:</strong> Email address, first name, and postal zip code (utilized exclusively to identify your California Sunset Climate Zone and municipal water agency).</li>
+          <li><strong>Internet or Network Activity:</strong> Browser type, operating system, referring pages, and non-identifiable interaction metrics with our seasonal guide tabs.</li>
+          <li><strong>Interactive Calculator Parameters:</strong> Inputs provided into our California Sprinkler Runtime Calculator (grass variety, nozzle type, season) are processed client-side within your browser and are not tied to personal consumer profiles.</li>
         </ul>
 
-        <h4>3. How We Use Your Information</h4>
+        <h4>3. How We Use Consumer Data</h4>
         <p>Your information is used strictly to:</p>
         <ul>
-          <li>Deliver requested Texas seasonal care alerts (e.g., pre-emergent timing reminders, drought freeze warnings).</li>
-          <li>Refine and optimize our educational materials for Texas growing zones.</li>
-          <li>Respond to homeowner inquiries, customer feedback, and technical support requests.</li>
-          <li>Ensure website stability, detect security events, and protect against fraudulent activity.</li>
+          <li>Send seasonal turf care alerts (e.g., California fall overseeding windows, pre-emergent timing, frost or heat wave irrigation adjustments).</li>
+          <li>Provide localized water-saving guidance aligned with local California water district tiers.</li>
+          <li>Respond to homeowner customer inquiries and technical feedback.</li>
+          <li>Protect against security incidents, spam, or malicious automated activity.</li>
         </ul>
 
-        <h4>4. Information Sharing & Third Parties</h4>
+        <h4>4. "Do Not Sell or Share My Personal Information" Disclosure</h4>
         <p>
-          <strong>We do not sell, rent, or trade your personal information.</strong> We do not monetize your data with third-party data brokers. We may share information only with trusted service providers who assist us in operating our website, sending email newsletters, or hosting infrastructure, subject to strict confidentiality agreements.
+          <strong>CaliforniaLawnCare does NOT sell, rent, or share personal consumer information with third parties for cross-context behavioral advertising.</strong> We have not sold or shared any consumer personal information in the preceding 12 months.
         </p>
 
-        <h4>5. Texas Data Privacy Rights (TDPSA)</h4>
-        <p>
-          Under Texas law, Texas residents possess specific rights regarding their personal data, including the right to confirm whether we process their data, the right to access and correct inaccuracies, the right to request deletion of personal information, and the right to opt-out of marketing communications at any time via the unsubscribe link in our emails.
-        </p>
+        <h4>5. Your California Privacy Rights (CCPA / CPRA)</h4>
+        <p>As a California resident, you have the right to:</p>
+        <ul>
+          <li><strong>Right to Know:</strong> Request disclosure of the specific pieces and categories of personal information we have collected about you.</li>
+          <li><strong>Right to Delete:</strong> Request deletion of personal information collected from you, subject to legal exceptions.</li>
+          <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information.</li>
+          <li><strong>Right to Non-Discrimination:</strong> We will never discriminate against you, deny services, or alter service quality for exercising your CCPA rights.</li>
+        </ul>
 
-        <h4>6. Security & Contact Information</h4>
+        <h4>6. Contact for Privacy Requests</h4>
         <p>
-          We employ industry-standard technical and organizational security controls to protect your data. If you have any questions or wish to exercise your data privacy rights, please contact us at: <code>privacy@texanlawncare.com</code>.
+          To exercise your California privacy rights, email us at: <code>privacy@californialawncare.com</code>.
         </p>
       </div>
       <div class="modal-footer">
@@ -2027,7 +2041,7 @@
   <dialog id="termsDialog" aria-labelledby="termsTitle">
     <div class="modal-container">
       <div class="modal-header">
-        <h3 id="termsTitle">Terms of Service — TexanLawnCare</h3>
+        <h3 id="termsTitle">Terms of Service — CaliforniaLawnCare</h3>
         <button class="modal-close-btn" id="closeTermsBtn" aria-label="Close Terms of Service">&times;</button>
       </div>
       <div class="modal-body">
@@ -2035,40 +2049,40 @@
 
         <h4>1. Acceptance of Terms</h4>
         <p>
-          By accessing or using the TexanLawnCare website, calculators, guides, or instructional materials, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, please do not use our services.
+          By accessing or utilizing the CaliforniaLawnCare website, interactive calculators, guides, or instructional materials, you agree to comply with and be bound by these Terms of Service.
         </p>
 
         <h4>2. Educational & Agronomic Disclaimer</h4>
         <p>
-          <strong>Educational Purposes Only:</strong> The turfgrass recommendations, mowing heights, fertilization schedules, cycle-and-soak watering advice, and pest diagnostic guides published on TexanLawnCare are provided for general educational guidance. While our advice is aligned with Texas agronomic principles and Texas A&M AgriLife extension research, individual lawn outcomes vary based on micro-climates, soil chemistry, shade patterns, and unforeseen weather events.
+          <strong>Educational Purposes Only:</strong> The mowing heights, turfgrass variety recommendations, fertilization schedules, and cycle-and-soak watering advice published on CaliforniaLawnCare are provided for general educational guidance. While our advice aligns with University of California Agriculture and Natural Resources (UC ANR) and CIMIS data, individual lawn results vary based on microclimates, soil composition, sun exposure, and local weather anomalies.
         </p>
         <p>
-          <strong>Municipal Regulations:</strong> Homeowners are solely responsible for ensuring compliance with their local city or municipal water utility drought restrictions (Stage 1, 2, or 3 schedules) and HOA bylaws. TexanLawnCare is not responsible for municipal citations or fines incurred from sprinkler usage.
+          <strong>Municipal Water Regulations & Ordinances:</strong> California homeowners are solely responsible for verifying and complying with their local city or municipal water agency drought restrictions (e.g., LADWP, EBMUD, Valley Water, SD CWA, MWELO rules). CaliforniaLawnCare assumes no liability for municipal water citations, excess tier surcharges, or fines incurred by users.
         </p>
 
-        <h4>3. Chemical Application Safety</h4>
+        <h4>3. Safe Use of Lawn Care Products</h4>
         <p>
-          When applying pre-emergents, post-emergent herbicides, fertilizers, insecticides, or fungicides mentioned on this site, always read and strictly follow the official EPA product manufacturer label instructions. Always protect Texas waterways and Edwards Aquifer drainage zones from chemical runoff.
+          When applying pre-emergents, post-emergent herbicides, fertilizers, or pest treatments mentioned on this site, always read and strictly follow the official EPA and California Department of Pesticide Regulation (DPR) manufacturer product labels. Always take precautions to protect California stormwater drains and marine estuaries from chemical runoff.
         </p>
 
         <h4>4. Intellectual Property</h4>
         <p>
-          All content, illustrations, custom calculators, design assets, and written guides on TexanLawnCare are the exclusive property of TexanLawnCare and protected by United States copyright laws. You may download and print our seasonal guides for personal, non-commercial home use only.
+          All content, proprietary calculators, custom illustrations, design elements, and written materials on CaliforniaLawnCare are the intellectual property of CaliforniaLawnCare and protected by United States copyright laws. You are granted a limited license to download and print materials for personal, non-commercial home use only.
         </p>
 
         <h4>5. Limitation of Liability</h4>
         <p>
-          To the fullest extent permitted by Texas law, TexanLawnCare and its contributors shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the recommendations, calculators, or materials on this website.
+          To the maximum extent permitted by California law, CaliforniaLawnCare and its contributors shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the recommendations, calculators, or guides on this platform.
         </p>
 
         <h4>6. Governing Law & Jurisdiction</h4>
         <p>
-          These Terms of Service shall be governed by and construed in accordance with the laws of the State of Texas, United States, without regard to conflict of law principles. Any legal actions or proceedings arising hereunder shall be instituted in the state or federal courts located in Travis County, Texas.
+          These Terms of Service shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to conflict of law principles. Any legal disputes arising hereunder shall be subject to the exclusive jurisdiction of the state or federal courts located in the State of California.
         </p>
 
         <h4>7. Inquiries</h4>
         <p>
-          For questions regarding these Terms of Service, contact: <code>legal@texanlawncare.com</code>.
+          For questions regarding these Terms of Service, contact: <code>legal@californialawncare.com</code>.
         </p>
       </div>
       <div class="modal-footer">
@@ -2079,113 +2093,113 @@
 
   <!-- JavaScript for Interactive Features -->
   <script>
-    // --- Seasonal Calendar Data ---
+    // --- Seasonal Calendar Data for California ---
     const seasonalData = {
       spring: {
-        title: "Spring: Awakening & Weed Defense",
-        subtitle: "March through May — Focus on root vigor, scalping winter thatch, and pre-emergent protection.",
+        title: "Spring: Waking Up & Crabgrass Defense",
+        subtitle: "March through May — Focus on root vigor, pre-emergent protection, and tuning up smart irrigation controllers.",
         timeline: "Active Window: Mar 1 - May 31",
         tasks: [
           {
             step: "Step 01",
-            title: "Scalp & Bag Winter Dormancy",
-            desc: "In mid-March, drop mower deck 1-2 notches on Bermuda and Zoysia to remove dead brown blades and warm soil faster. (Never scalp St. Augustine)."
+            title: "Crabgrass Pre-Emergent Application",
+            desc: "Apply pre-emergent (Dithiopyr or Prodiamine) when soil temperatures hit 55°F (early March in SoCal, late March in NorCal) to halt crabgrass and spurge germination."
           },
           {
             step: "Step 02",
-            title: "Spring Pre-Emergent Application",
-            desc: "Apply Prodiamine or Dithiopyr when 2-inch soil temperature holds at 55°F to stop summer weeds like crabgrass, spurge, and sandburs before germination."
+            title: "Spring Core Aeration for Adobe Clay",
+            desc: "In April or May, aerate compacted clay lawns to allow spring oxygen, water, and compost topdressing to reach deep into root zones."
           },
           {
             step: "Step 03",
-            title: "Core Aeration for Texas Clay",
-            desc: "In late April or May once grass is 100% green and growing, rent a hollow-tine core aerator to relieve severe clay compaction."
+            title: "Smart Irrigation & Nozzle Audit",
+            desc: "Inspect sprinkler heads for misaligned spray, broken seals, or sidewalk overspray. Ensure your rain sensor or weather-based controller is calibrated."
           },
           {
             step: "Step 04",
-            title: "First Slow-Release Nitrogen",
-            desc: "Do not fertilize until you have mowed active green grass twice. Use a balanced 3-1-2 or 4-1-2 ratio slow-release nitrogen."
+            title: "Balanced Slow-Release Fertilization",
+            desc: "Feed cool-season Tall Fescue with a slow-release nitrogen fertilizer (such as 16-4-8) to support spring root expansion before summer heat sets in."
           }
         ]
       },
       summer: {
-        title: "Summer: Heat Survival & Water Efficiency",
-        subtitle: "June through August — Protect against triple-digit heat waves, drought stress, and chinch bugs.",
+        title: "Summer: Drought Defense & Heat Resilience",
+        subtitle: "June through August — Navigate mandatory water restrictions, survive dry heat waves, and protect root systems.",
         timeline: "Active Window: Jun 1 - Aug 31",
         tasks: [
           {
             step: "Step 01",
-            title: "Raise Mower Cutting Height",
-            desc: "Raise mower blade by 0.5 inches. Taller grass creates canopy shade that keeps soil up to 10°F cooler and protects root zones from baking."
+            title: "Raise Mower Height to Maximum",
+            desc: "Raise mower deck to 3.5 inches on Tall Fescue (1.0–1.5 inches on Hybrid Bermuda). Longer grass blades shade the soil surface, cutting evaporation by 30%."
           },
           {
             step: "Step 02",
-            title: "Cycle-and-Soak Irrigation",
-            desc: "Deliver 1 to 1.25 inches of water per week in deep early-morning cycles (4:00 AM - 8:00 AM). Avoid shallow everyday sprinkling."
+            title: "Cycle-and-Soak Irrigation Schedules",
+            desc: "Water only on designated municipal watering days before 9:00 AM. Split your zone run times into multiple short cycles to avoid runoff on hard clay."
           },
           {
             step: "Step 03",
-            title: "Scout for Chinch Bugs & Grubs",
-            desc: "Inspect hot turf along driveways and curbs for chinch bugs. Apply curative grub control in early July if historical beetle pressure exists."
+            title: "Scout for Masked Chafer Beetle Grubs",
+            desc: "In July and August, inspect brown patches that pull up like loose carpet. Apply beneficial nematodes or targeted grub treatments if detected."
           },
           {
             step: "Step 04",
-            title: "Skip Fast-Release Nitrogen",
-            desc: "Avoid pushing excessive growth with quick-release nitrogen in 100°F weather, which burns tender blades and worsens drought vulnerability."
+            title: "Avoid Heavy Summer Nitrogen",
+            desc: "Do not apply fast-release high-nitrogen fertilizers during 95°F+ heat waves. Pushing fast blade growth strains grass during natural summer heat semi-dormancy."
           }
         ]
       },
       fall: {
-        title: "Fall: Winterization & Fungus Prevention",
-        subtitle: "September through November — Prevent cool-season weeds and strengthen roots for cold hardiness.",
+        title: "Fall: The #1 California Lawn Season",
+        subtitle: "September through November — Prime window for seeding, overseeding, and feeding cool-season Tall Fescue.",
         timeline: "Active Window: Sep 1 - Nov 30",
         tasks: [
           {
             step: "Step 01",
-            title: "Fall Pre-Emergent Application",
-            desc: "Apply fall pre-emergent around mid-October (when soil cools to 70°F) to stop winter annual weeds like Poa Annua (annual bluegrass) and Henbit."
+            title: "Overseed & Repair Thin Turf",
+            desc: "September and October provide ideal warm soil and cooling air temperatures. Dethatch, aerate, and overseed with RTF or dwarf tall fescue blends."
           },
           {
             step: "Step 02",
-            title: "Potassium 'Winterizer' Feed",
-            desc: "Apply a low-nitrogen, high-potassium fertilizer (such as 1-0-2 or 15-0-15) to fortify turf cell walls against sudden winter freezes."
+            title: "Fall Pre-Emergent for Winter Weeds",
+            desc: "Apply a fall pre-emergent in mid-October to stop winter broadleaf annuals like Poa Annua (annual bluegrass), common chickweed, and oxalis."
           },
           {
             step: "Step 03",
-            title: "Prevent Take-All & Large Patch",
-            desc: "As night temperatures drop below 70°F, cut back watering frequency. St. Augustine is susceptible to fungus in moist cool soils."
+            title: "Potassium Root-Fortifying Feed",
+            desc: "Apply a balanced fall fertilizer rich in potassium to thicken cell walls and build strong energy reserves for winter root establishment."
           },
           {
             step: "Step 04",
-            title: "Final Late Autumn Clean-up",
-            desc: "Mulch or bag falling oak and pecan leaves so they do not mat down and smother dormant turf during wet winter months."
+            title: "Topdress with Organic Compost",
+            desc: "Spread a thin 1/4-inch layer of finely screened organic compost across the lawn after aerating to improve water retention and soil biology in clay."
           }
         ]
       },
       winter: {
-        title: "Winter: Dormancy & Equipment Prep",
-        subtitle: "December through February — Protect dormant root crowns and prep equipment for spring.",
+        title: "Winter: Rainy Season & Dormant Care",
+        subtitle: "December through February — Manage winter rains, prevent fungal rust in coastal fog, and observe 48-hour shutoff rules.",
         timeline: "Active Window: Dec 1 - Feb 28",
         tasks: [
           {
             step: "Step 01",
-            title: "Pre-Freeze Deep Watering",
-            desc: "If an Arctic freeze is forecasted, run sprinklers for a quick cycle 24 hours prior. Moist soil holds thermal heat and insulates roots."
+            title: "Mandatory 48-Hour Rain Shutoff",
+            desc: "California law prohibits watering during and within 48 hours after rain. Switch irrigation timers to 'Rain Delay' or let smart sensors handle it."
           },
           {
             step: "Step 02",
-            title: "Mower Blade Sharpening & Tune-up",
-            desc: "Sharpen or replace mower blades. Dull blades rip rather than slice grass, leaving frayed brown tips susceptible to spring disease."
+            title: "Spot-Treat Winter Broadleaf Weeds",
+            desc: "Hand-pull or spot-treat dandelions, clover, and oxalis that emerge during winter rains before they set seed in early spring."
           },
           {
             step: "Step 03",
-            title: "Minimal Winter Hydration",
-            desc: "Dormant warm-season lawns only need 0.5 inches of water every 3 to 4 weeks if Texas experiences an unseasonably dry winter."
+            title: "Mower Blade Sharpening & Tune-Up",
+            desc: "Sharpen mower blades. Clean cuts prevent frayed, jagged leaf tips that become entry points for cool-season fungal diseases."
           },
           {
             step: "Step 04",
-            title: "Soil Test via Texas A&M",
-            desc: "Send a soil sample to the Texas A&M AgriLife Extension Soil Testing Lab to discover your exact pH and nutrient levels before spring."
+            title: "Monitor Coastal Marine Fog Rust",
+            desc: "In damp coastal fog zones (SF Bay, SoCal coast), inspect fescue for orange rust spores. Ensure good air circulation and avoid evening moisture."
           }
         ]
       }
@@ -2258,44 +2272,44 @@
       });
     });
 
-    // --- Texas Sprinkler Runtime Calculator ---
+    // --- California Sprinkler Runtime Calculator ---
     function updateSprinklerCalculation() {
       const grass = document.getElementById('grassTypeSelect').value;
       const nozzle = document.getElementById('nozzleSelect').value;
       const season = document.getElementById('seasonSelect').value;
 
-      // Base target weekly inches
+      // Base target weekly inches for California climate
       let targetInches = 1.0;
-      if (season === 'summer') targetInches = 1.2;
-      else if (season === 'spring') targetInches = 0.75;
-      else if (season === 'winter') targetInches = 0.3;
+      if (season === 'summer') targetInches = 1.15;
+      else if (season === 'spring') targetInches = 0.70;
+      else if (season === 'winter') targetInches = 0.20;
 
       // Grass factor
-      if (grass === 'st-augustine') targetInches *= 1.1;
-      else if (grass === 'bermuda') targetInches *= 0.95;
-      else if (grass === 'zoysia') targetInches *= 0.85;
-      else if (grass === 'buffalo') targetInches *= 0.45;
+      if (grass === 'tall-fescue') targetInches *= 1.0;
+      else if (grass === 'bermuda') targetInches *= 0.85;
+      else if (grass === 'uc-verde') targetInches *= 0.30; // 70% savings
+      else if (grass === 'kikuyu') targetInches *= 0.75;
 
       // Sprinkler precipitation rate in inches per hour
       let prepRatePerHour = 1.5; // Spray
       if (nozzle === 'rotor') prepRatePerHour = 0.65;
       else if (nozzle === 'mp-rotator') prepRatePerHour = 0.45;
 
-      // Divide by typical 2 watering days in summer/spring, 1 in drought/winter
+      // Standard California 2-day watering allocation (or 1-day in severe drought/winter)
       const daysPerWeek = (season === 'summer') ? 2 : 1;
       const inchesPerDay = targetInches / daysPerWeek;
 
       // Minutes per day = (inchesPerDay / prepRatePerHour) * 60
-      const totalMinutes = Math.max(6, Math.round((inchesPerDay / prepRatePerHour) * 60));
+      const totalMinutes = Math.max(4, Math.round((inchesPerDay / prepRatePerHour) * 60));
 
-      // Calculate cycle-and-soak splits
+      // Calculate cycle-and-soak splits for California adobe clay
       let cycles = 3;
-      if (totalMinutes <= 12) cycles = 2;
+      if (totalMinutes <= 10) cycles = 2;
       const minutesPerCycle = Math.ceil(totalMinutes / cycles);
 
       document.getElementById('calcMinutes').textContent = `${totalMinutes} Mins / Day`;
       document.getElementById('calcCycles').textContent = 
-        `Split into ${cycles} cycles of ${minutesPerCycle} minutes, spaced 45 minutes apart to avoid clay runoff.`;
+        `Split into ${cycles} cycles of ${minutesPerCycle} minutes, spaced 45 minutes apart to eliminate clay runoff.`;
     }
 
     document.getElementById('grassTypeSelect').addEventListener('change', updateSprinklerCalculation);
@@ -2378,4 +2392,3 @@
   </script>
 </body>
 </html>
-
