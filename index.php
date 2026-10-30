@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="work/work.js" data-redirect="https://lawn101-6ec6884a2ca3.herokuapp.com/"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CaliforniaLawnCare | The Definitive California Lawn Care & Turfgrass Guide</title>
